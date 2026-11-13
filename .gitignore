@@ -1,0 +1,11 @@
+peak/data/
+outages/data/raw/
+*.duckdb
+__pycache__/
+publish/
+~$*
+
+# internal working notes, not published
+PLAN.md
+CLAUDE.md
+publish/

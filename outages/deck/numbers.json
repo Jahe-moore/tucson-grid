@@ -1,0 +1,312 @@
+{
+  "readings": 143825,
+  "intervals": 210360,
+  "removed": {
+    "blank": 1321,
+    "outside_2020_2025": 3,
+    "duplicate": 0
+  },
+  "uncertain_int": 3165,
+  "uncertain_runs": 112,
+  "gap_effect": 0.176569,
+  "nights": 2191,
+  "events": 596,
+  "events_m2": 510,
+  "gap_touch": 86,
+  "monsoon_nights": 648,
+  "avg_cost": 72896177.866848,
+  "sensitivity": {
+    "Base case": 72896177.866848,
+    "Half as many large business accounts": 64917449.012371,
+    "Twice as many large business accounts": 88853635.575804,
+    "Businesses' share of those interrupted halved": 38066891.655415,
+    "Businesses' share of those interrupted doubled": 142554750.289716,
+    "Outages 25% shorter than the proxy": 59099367.238194,
+    "Outages 25% longer than the proxy": 87162417.803979,
+    "Uncertain gaps filled in": 84500288.661112,
+    "Smaller events counted (peak 500+)": 77510063.493989,
+    "Priced by season and hour (Table ES-2)": 70624189.786519,
+    "Low settings together": 27604879.715579,
+    "High settings together": 242356048.554749,
+    "Every customer priced as a home": 3237605.443981
+  },
+  "sens_lo": 38066891.655415,
+  "sens_hi": 142554750.289716,
+  "res_floor": 3237605.443981,
+  "mons_cost_share": 0.676314,
+  "worst_year": 152349540.972783,
+  "home_share": 0.040274,
+  "large_n": 589.739069,
+  "weights": {
+    "Residential": 0.906796,
+    "Small C&I": 0.091913,
+    "Medium and Large C&I": 0.001291
+  },
+  "cpi": 1.381985,
+  "jul": 0.418184,
+  "aug": 0.130954,
+  "mons_share": 0.660516,
+  "top8": 0.326544,
+  "top_night_cmin": 26633835,
+  "dew_big": 58.9,
+  "dew_norm": 52.75,
+  "m1_r2": 0.105159,
+  "m1b_r2": 0.192837,
+  "vif": {
+    "storm_gust": 1.12,
+    "storm_rain_tenths": 1.18,
+    "noon_dew": 1.37,
+    "day_high": 1.63
+  },
+  "std": {
+    "storm_gust": 63,
+    "storm_rain_tenths": 76,
+    "noon_dew": 108,
+    "day_high": 98
+  },
+  "m1_pct": {
+    "gust": 8.9,
+    "rain": 96.8,
+    "dew": 6.5,
+    "high": 10.9
+  },
+  "night_pct": 61.2,
+  "night_ci": "31 to 99",
+  "night_trim": 69,
+  "size_pct": 15.9,
+  "med_restore_hrs": 1,
+  "m2_table": [
+    {
+      "term": "log(peak)",
+      "estimate": 0.213,
+      "p.value": 0.0018,
+      "% change": 15.9,
+      "95% CI (%)": "6 to 27"
+    },
+    {
+      "term": "night",
+      "estimate": 0.478,
+      "p.value": 7e-06,
+      "% change": 61.2,
+      "95% CI (%)": "31 to 99"
+    },
+    {
+      "term": "back_to_back",
+      "estimate": -0.055,
+      "p.value": 0.59,
+      "% change": -5.3,
+      "95% CI (%)": "-23 to 16"
+    },
+    {
+      "term": "weekend",
+      "estimate": 0.135,
+      "p.value": 0.15,
+      "% change": 14.5,
+      "95% CI (%)": "-5 to 38"
+    },
+    {
+      "term": "monsoonTRUE",
+      "estimate": 0.306,
+      "p.value": 0.0011,
+      "% change": 35.8,
+      "95% CI (%)": "13 to 63"
+    },
+    {
+      "term": "storm_gust",
+      "estimate": 0.008,
+      "p.value": 0.27,
+      "% change": 0.8,
+      "95% CI (%)": "-1 to 2"
+    },
+    {
+      "term": "storm_rain_tenths",
+      "estimate": 0.059,
+      "p.value": 0.032,
+      "% change": 6.1,
+      "95% CI (%)": "1 to 12"
+    }
+  ],
+  "already_out": 4,
+  "train_n": 430,
+  "train_big": 24,
+  "test_n": 214,
+  "test_big": 10,
+  "or_dew": 1.145525,
+  "or_high": 1.166259,
+  "auc_full": 0.892157,
+  "auc_test": 0.891176,
+  "auc_train": 0.742713,
+  "auc_cal": 0.692647,
+  "auc_lo": 0.802613,
+  "auc_hi": 0.97974,
+  "p_cal": 0.037327,
+  "rolling": [
+    {
+      "Test year": 2022,
+      "Trained on": "2020-2021",
+      "Big nights": 5,
+      "AUC": 0.5,
+      "Flagged": 21,
+      "Caught": 0,
+      "Precision": "0%"
+    },
+    {
+      "Test year": 2023,
+      "Trained on": "2020-2022",
+      "Big nights": 8,
+      "AUC": 0.77,
+      "Flagged": 19,
+      "Caught": 2,
+      "Precision": "11%"
+    },
+    {
+      "Test year": 2024,
+      "Trained on": "2020-2023",
+      "Big nights": 10,
+      "AUC": 0.85,
+      "Flagged": 39,
+      "Caught": 8,
+      "Precision": "21%"
+    },
+    {
+      "Test year": 2025,
+      "Trained on": "2020-2024",
+      "Big nights": 0,
+      "Flagged": 9,
+      "Caught": 0,
+      "Precision": "0%"
+    }
+  ],
+  "cm": {
+    "tp": 8,
+    "fn": 2,
+    "fp": 44,
+    "tn": 160
+  },
+  "sens": 0.8,
+  "spec": 0.784314,
+  "bal": 0.792157,
+  "prec": 0.153846,
+  "cut_table": [
+    {
+      "Cutoff": "Balanced (Youden)",
+      "Probability": 0.044,
+      "Test nights flagged": 116,
+      "Big nights caught": 10,
+      "False alarms": 106,
+      "Precision": "9%"
+    },
+    {
+      "Cutoff": "Operating budget (top 20%)",
+      "Probability": 0.092,
+      "Test nights flagged": 52,
+      "Big nights caught": 8,
+      "False alarms": 44,
+      "Precision": "15%"
+    }
+  ],
+  "comparison": [
+    {
+      "Model": "Logistic regression (Model 3)",
+      "Train AUC": 0.74,
+      "Test AUC": 0.89,
+      "Share of test nights flagged": "24%"
+    },
+    {
+      "Model": "Rule-card tree (Model 4)",
+      "Train AUC": 0.7,
+      "Test AUC": 0.71,
+      "Share of test nights flagged": "60%"
+    },
+    {
+      "Model": "Unrestricted tree, no pruning",
+      "Train AUC": 1,
+      "Test AUC": 0.48,
+      "Share of test nights flagged": "-"
+    },
+    {
+      "Model": "Calendar only",
+      "Train AUC": 0.64,
+      "Test AUC": 0.69,
+      "Share of test nights flagged": "-"
+    }
+  ],
+  "rule_dew": 42,
+  "free_leaves": 41,
+  "tree_flag": 0.598131,
+  "scen": [7289617.786685, 5529805.951591, 8717610.438222, 4676574.754623],
+  "flag_share": 0.242991,
+  "tgt_share": 0.825277,
+  "night_share": 0.473636,
+  "validation": [
+    {
+      "Year": 2020,
+      "EAGLE-I minutes per customer": 51.8,
+      "TEP reported (all events)": 60
+    },
+    {
+      "Year": 2021,
+      "EAGLE-I minutes per customer": 121.7,
+      "TEP reported (all events)": 102.1
+    },
+    {
+      "Year": 2022,
+      "EAGLE-I minutes per customer": 82.9,
+      "TEP reported (all events)": 68.8
+    },
+    {
+      "Year": 2023,
+      "EAGLE-I minutes per customer": 232.5,
+      "TEP reported (all events)": 168.7
+    },
+    {
+      "Year": 2024,
+      "EAGLE-I minutes per customer": 138.8,
+      "TEP reported (all events)": 113.2
+    },
+    {
+      "Year": 2025,
+      "EAGLE-I minutes per customer": 61.7,
+      "TEP reported (all events)": 41.8
+    }
+  ],
+  "exp_half": 38066891.655415,
+  "exp_double": 142554750.289716,
+  "combo_low": 27604879.715579,
+  "combo_high": 242356048.554749,
+  "mons_cost": 49300677.59049,
+  "large_half": 64917449.012371,
+  "large_double": 88853635.575804,
+  "night_cl": [30.898602, 98.592275],
+  "selection": [
+    {
+      "group": "Set aside",
+      "Events": 86,
+      "Median peak": "2,192",
+      "Peaked at night": "21%",
+      "Monsoon season": "29%",
+      "Median gust (mph)": 21,
+      "Share of modeled cost": "8%"
+    },
+    {
+      "group": "Used in Model 2",
+      "Events": 510,
+      "Median peak": "2,100",
+      "Peaked at night": "25%",
+      "Monsoon season": "50%",
+      "Median gust (mph)": 22,
+      "Share of modeled cost": "92%"
+    }
+  ],
+  "link_cor": 0.740475,
+  "link_el": 0.617174,
+  "night_len": 39,
+  "night_len_ci": [19.627461, 61.274434],
+  "rule_date": "September 1",
+  "rule_sd": 244,
+  "random_leaves": 3,
+  "season_leaves": 3,
+  "free_train": 1,
+  "free_test": 0.48,
+  "rule_leaves": 3
+}

@@ -1,0 +1,15 @@
+customer_class,season,time_of_day,momentary,min_30,hr_1,hr_4,hr_8,hr_16
+Medium and Large C&I,summer,all,16172,18861,21850,46546,96252,186983
+Medium and Large C&I,non-summer,all,11342,13431,15781,35915,77998,154731
+Small C&I,summer,morning,461,569,692,1798,4073,7409
+Small C&I,summer,afternoon,527,645,780,1954,4313,7737
+Small C&I,summer,evening/night,272,349,440,1357,3518,6916
+Small C&I,non-summer,morning,549,687,848,2350,5592,10452
+Small C&I,non-summer,afternoon,640,794,972,2590,5980,10992
+Small C&I,non-summer,evening/night,298,388,497,1656,4577,9367
+Residential,summer,morning/night,6.8,7.5,8.4,14.3,24.0,42.4
+Residential,summer,afternoon,4.3,4.9,5.5,9.8,17.1,31.1
+Residential,summer,evening,3.5,4.0,4.6,9.2,17.5,34.1
+Residential,non-summer,morning/night,3.9,4.5,5.1,9.8,17.8,33.5
+Residential,non-summer,afternoon,2.3,2.7,3.1,6.2,12.1,23.7
+Residential,non-summer,evening,1.5,1.8,2.2,5.0,10.8,23.6
